@@ -14,9 +14,17 @@ public class Prob3 {
 		printCharArray(c);
 	}
 
+//	공백 문자 바꾸기 
 	public static void replaceSpace(char c[]) {
+		
+		for(int i=0;i<c.length;i++){
+			if(c[i]==' '){
+				c[i]=',';
+			}
+		}
 	}
 
+// 배열 원소 출력
 	public static void printCharArray(char c[]) {
 		System.out.println( c );
 	}
