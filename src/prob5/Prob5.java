@@ -7,15 +7,18 @@ public class Prob5 {
 
 	public static void main(String[] args) {
 		
-		Random random = new Random();
-		int number = random.nextInt(10);
-		System.out.println(number);
-		int mynum=10000;
+		
 		Scanner scan = new Scanner(System.in);
 		
 		while(true){
 			
+			Random random = new Random();
+			int number = random.nextInt(10);
+			System.out.println(number);
+			int mynum=-1;
+			
 			System.out.println("수를 결정하였습니다 맞춰보세요!!!");
+			
 			int low=0;
 			int up =100;
 			int count=1;
@@ -43,17 +46,21 @@ public class Prob5 {
 						System.out.println("더 크게");
 					}
 			}	
-			System.out.println("정답입니다");
-			break;
-		}
 			
-		System.out.print("다시 하시겠습니까?(y/n)>>");
-		String answer = scan.next();
+			System.out.println("정답입니다");
+			System.out.println();
+			System.out.print("다시 하시겠습니까?(y/n)>>");
+			String answer = scan.next();
+			
+			if(answer.equals("y")==false){
+				System.out.println("종료합니다");
+				break;
+			}
+			
+		}
+//			한번 더 
 		
-//		if(answer.equals("y")==true){
-//			
-//		}
 		
-		System.out.println(answer.equals("y"));
+	
 	}
 }
